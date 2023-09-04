@@ -22,22 +22,33 @@ end)
 Tab:NewSection("OWNER = THEGOATPRO")
 local Section = Tab:NewSection(" CO OWNER = ALLFILM")
 local Section = Tab:NewSection("OWNER OF HUB = THEGOATPRO") 
--- By AllFilm
+--By AllFilm Official
 
--- don’t delete anything here if you don’t know what your doing.
+-- Don’t Deleted/Change Things Down the code line if you don’t know what your doing
+
+--Calming this whitelist being yours is False
+
+local tablewhitelistusernames = {
+    "Roblox Username Here",
+    "Roblox Username Here",
+    "Roblox Username Here",
+    "Roblox Username Here" --Add Peoples Roblox Username Above to whitelist them easy.
+}
 
 local tablewhitelistuserids = {
-   Rblx Id here,
-    Rblx id here,
-   Rblx id here , 
-    Rblx id here -- add more commas for the user ids (main only) roblox id Not username or others
+   Roblox Id here,
+   Roblox id here,
+   Roblox Id here,
+   Roblox Id here -- add more commas for the user ids (main only) roblox id only not other ones
 }
- 
+
+local whitelist = tablewhitelistusernames
 local whitelistids = tablewhitelistuserids
- 
+
+
 local plr = game:GetService("Players").LocalPlayer
- 
-table.find(whitelistids, plr.UserId) then
+
+if table.find(whitelist, plr.Name) and table.find(whitelistids, plr.UserId) then
     else
-    plr:Kick("Not Whitelisted to the Script ")
+    plr:Kick("Your Not whitelist")
 end
