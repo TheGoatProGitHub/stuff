@@ -25,7 +25,7 @@ local Section = Tab:NewSection("OWNER OF HUB = THEGOATPRO")
 --By AllFilm
 -- List of whitelisted players
 local whitelist = {
-    "dababycarnocap ",
+    "Roblox User Here ",
     "cowcowmanmanthingl89 ",
     -- Add more Roblox User Same shit as the top With “ User correct or it might break
 }
