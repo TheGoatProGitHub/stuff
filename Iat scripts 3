@@ -35,7 +35,7 @@ local tablewhitelistusernames = {
 }
 
 local tablewhitelistuserids = {
-   Roblox Id here,
+   2767187560,
    Roblox id here,
    Roblox Id here,
    Roblox Id here -- add more commas for the user ids (main only) roblox id only not other ones
