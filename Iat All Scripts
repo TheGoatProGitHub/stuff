@@ -21,4 +21,32 @@ end)
 
 Tab:NewSection("OWNER = THEGOATPRO")
 local Section = Tab:NewSection(" CO OWNER = ALLFILM")
-local Section = Tab:NewSection("OWNER OF HUB = THEGOATPRO")
+local Section = Tab:NewSection("OWNER OF HUB = THEGOATPRO") 
+--By AllFilm
+-- List of whitelisted players
+local whitelist = {
+    "dababycarnocap ",
+    "Roblox User Here ",
+    -- Add more Roblox User Same shit as the top With “ User correct or it might break
+}
+
+-- Function to check if a player is whitelisted Bottom under this line
+local function isPlayerWhitelisted()
+    local playerName = player.Name
+    for _, whitelistedName in pairs(whitelist) do
+        if playerName == whitelistedName then
+            return true
+        end
+    end
+    return false
+end
+
+
+-- Event handler for when a player joins the game to security check!
+game.Players.PlayerAdded:Connect(function(player)
+    if not isPlayerWhitelisted(player) then
+        -- Kick players who are not whitelisted
+        player:Kick("You are not on the whitelist for this script Or script doesn’t support this game.")
+    end
+end)
+
