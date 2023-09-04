@@ -1,0 +1,53 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Iat Scripts", "Midnight")
+local Tab = Window:NewTab("All Scripts Of Iat And Other!")
+local Section = Tab:NewSection("Iat Scripts!")
+Section:NewButton("thunder hub", "this is goated iat script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AllFilmOffical/MainHub/main/Allfilm"))()
+    print("Clicked")
+end)
+Section:NewButton("goats hub", "my script yay", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AllFilmOffical/goathub/main/Main/script", true))()
+    print("Clicked")
+end)
+Section:NewButton("faded da hood", "currently goat da hood script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
+Section:NewButton("GOATED FUNKY FRIDAY", "currently goat FUNKY FRIDAY script", function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/XMAS-Event-or-Funky-Friday-Auto-Player-Mobile-6721"))()
+end)
+
+
+Tab:NewSection("OWNER = THEGOATPRO")
+local Section = Tab:NewSection(" CO OWNER = ALLFILM")
+local Section = Tab:NewSection("OWNER OF HUB = THEGOATPRO"
+--By AllFilm Official
+
+-- Don’t Deleted/Change Things Down the code line if you don’t know what your doing
+
+--Calming this whitelist being yours is False
+
+local tablewhitelistusernames = {
+    "oop_897",
+    "Roblox Username Here",
+    "Roblox Username Here",
+    "Roblox Username Here" --Add Peoples Roblox Username Above to whitelist them easy.
+}
+
+local tablewhitelistuserids = {
+   Roblox Id here,
+   Roblox id here,
+   Roblox Id here,
+   Roblox Id here -- add more commas for the user ids (main only) roblox id only not other ones
+}
+
+local whitelist = tablewhitelistusernames
+local whitelistids = tablewhitelistuserids
+
+
+local plr = game:GetService("Players").LocalPlayer
+
+if table.find(whitelist, plr.Name) and table.find(whitelistids, plr.UserId) then
+    else
+    plr:Kick("Your Not whitelist")
+end
